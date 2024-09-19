@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#FFFFFF">
+
+    <!-- Icono de éxito -->
+    <!-- Coloca aquí tu icono de éxito -->
+    android:contentDescription="Éxito" />
+
+    <!-- Texto de pedido exitoso -->
+    <ImageView
+            android:layout_width="211dp"
+            android:layout_height="287dp"
+            android:src="@drawable/success_icon"></ImageView>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pedido exitoso"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+    <!-- Texto del método de pago -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pago con tarjeta"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginTop="8dp"/>
+
+    <!-- Dirección -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dirección:Casa 1"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginTop="8dp"/>
+</LinearLayout>

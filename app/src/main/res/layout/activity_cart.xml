@@ -54,8 +54,8 @@
 
         asd
         <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="389dp"
+                android:layout_height="216dp"
                 android:orientation="horizontal"
                 android:layout_marginTop="16dp"
                 android:gravity="center">
@@ -63,7 +63,7 @@
             <!-- Sección cantidad (Contador) -->
             <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center"
                     android:background="@drawable/search_bar_background"
@@ -72,67 +72,94 @@
                 <!-- Imagen -->
                 <ImageView
                         android:id="@+id/restaurant_image"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="185dp"
+                        android:layout_height="177dp"
                         android:scaleType="centerCrop"
+                        android:padding="8dp"
                         android:src="@drawable/carne"/>
             </LinearLayout>
 
             <Space
-                    android:layout_width="52dp"
+                    android:layout_width="39dp"
                     android:layout_height="wrap_content"/>
 
             <!-- precio -->
-            <Button
-                    android:id="@+id/button_add"
-                    android:layout_width="171dp"
-                    android:layout_height="80dp"
-                    android:text="Agregar S./10"
-                    android:padding="3dp"
-                    android:background="@drawable/search_bar_background"
-                    android:textColor="#fff"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp">
+
+                <!-- Cuadro de texto para ingresar el nombre -->
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="66dp"
+                        android:text="Hamburgesa de carne con queso"
+                        android:textSize="20dp"
+                        android:padding="4dp"
+                        android:textColor="#000"
+                        android:layout_marginBottom="1dp"/>
+
+                <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="S./ 10"
+                        android:textSize="14dp"
+                        android:padding="4dp"
+                        android:textColor="#000"
+                        android:layout_marginBottom="1dp"/>
+
+                <!-- Contenedor del contador -->
+                <LinearLayout
+                        android:layout_width="127dp"
+                        android:layout_height="59dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/search_bar_background"
+                        android:backgroundTint="#B38C00">
+
+                    <!-- Botón para restar -->
+                    <Button
+                            android:id="@+id/button_minus"
+                            android:layout_width="53dp"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textSize="20sp"
+                            android:background="?android:attr/selectableItemBackground"/>
+
+                    <!-- Mostrar cantidad -->
+                    <TextView
+                            android:id="@+id/text_quantity"
+                            android:layout_width="40dp"
+                            android:layout_height="42dp"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textSize="20sp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:textColor="#FFFFFF"/>
+
+                    <!-- Botón para sumar -->
+                    <Button
+                            android:id="@+id/button_plus"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:text="+"
+                            android:textSize="20sp"
+                            android:background="?android:attr/selectableItemBackground"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
 
         <!-- Card de Restaurante -->
-        <LinearLayout
-                android:id="@+id/restaurant_card"
-                android:layout_width="match_parent"
-                android:layout_height="113dp"
-                android:orientation="vertical"
-                android:padding="10dp"
-                android:clickable="true"
-                android:focusable="true">
 
-        </LinearLayout>
 
         <Space
                 android:layout_width="match_parent"
-                android:layout_height="16dp"/>
-        <TextView
-                android:id="@+id/restaurant_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ñurgen king"
-                android:textSize="28sp"/>
-
-        <Space
-                android:layout_width="match_parent"
-                android:layout_height="21dp"/>
-        <TextView
-                android:id="@+id/descripcion"
-                android:layout_width="331dp"
-                android:layout_height="72dp"
-                android:text="Hamburgesa de carne con queso, con asdjhgasjsadjhasafggdfdfgdfg"
-                android:textSize="18sp"/>
-        <TextView
-                android:text="S./ 10 "
-                android:textSize="20sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView"/>
-
-        <Space
-                android:layout_width="match_parent"
-                android:layout_height="58dp"/>
+                android:layout_height="306dp"/>
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -140,55 +167,13 @@
                 android:layout_marginTop="16dp"
                 android:gravity="center">
 
-            <!-- Sección cantidad (Contador) -->
-            <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="80dp"
-                    android:orientation="horizontal"
-                    android:gravity="center"
-                    android:background="@drawable/search_bar_background"
-                    android:backgroundTint="#B38C00">
-
-                <!-- Botón para restar -->
-                <Button
-                        android:id="@+id/button_minus"
-                        android:layout_width="53dp"
-                        android:layout_height="wrap_content"
-                        android:text="-"
-                        android:textSize="20sp"
-                        android:background="?android:attr/selectableItemBackground"/>
-
-                <!-- Mostrar cantidad -->
-                <TextView
-                        android:id="@+id/text_quantity"
-                        android:layout_width="40dp"
-                        android:layout_height="42dp"
-                        android:gravity="center"
-                        android:text="1"
-                        android:textSize="20sp"
-                        android:background="?android:attr/selectableItemBackground"
-                        android:textColor="#FFFFFF"/>
-
-                <!-- Botón para sumar -->
-                <Button
-                        android:id="@+id/button_plus"
-                        android:layout_width="48dp"
-                        android:layout_height="wrap_content"
-                        android:text="+"
-                        android:textSize="20sp"
-                        android:background="?android:attr/selectableItemBackground"/>
-            </LinearLayout>
-
-            <Space
-                    android:layout_width="52dp"
-                    android:layout_height="wrap_content"/>
 
             <!-- Sección botón agregar -->
             <Button
-                    android:id="@+id/button_add"
-                    android:layout_width="171dp"
+                    android:id="@+id/button_pagar"
+                    android:layout_width="338dp"
                     android:layout_height="80dp"
-                    android:text="Agregar S./10"
+                    android:text="Pagar S./10"
                     android:padding="3dp"
                     android:background="@drawable/search_bar_background"
                     android:textColor="#fff"/>
