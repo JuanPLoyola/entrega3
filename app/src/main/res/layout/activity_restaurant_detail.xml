@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <!-- Contenido Principal -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <!-- Toolbar superior -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+            <ImageButton
+                    android:id="@+id/menu_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1"/>
+            <Button
+                    android:id="@+id/location_button"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Casa 1"
+                    android:padding="10dp"
+                    android:background="#B38C00" />
+
+
+            <Space
+                    android:layout_width="169dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageButton
+                    android:id="@+id/cart_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cart"
+                    android:contentDescription="Cart Button"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+
+        <!-- Card de Restaurante -->
+        <LinearLayout
+                android:id="@+id/restaurant_card"
+                android:layout_width="match_parent"
+                android:layout_height="217dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:clickable="true"
+                android:focusable="true">
+
+            <ImageView
+                    android:id="@+id/restaurant_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/restaurante1"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/restaurant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ñurgen king"
+                android:textSize="18sp"/>
+
+        <TextView
+                android:id="@+id/descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En nuestro restaurante de hamburguesas, combinamos ingredientes frescos y de calidad."
+                android:textSize="18sp"/>
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+            <!-- Información del restaurante (ej. rating, costo, tiempo) -->
+            <TextView
+                    android:id="@+id/restaurant_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/star"
+                    android:text="4.1"
+                    android:layout_marginEnd="16dp"/>
+
+            <TextView
+                    android:id="@+id/restaurant_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/price"
+                    android:text="S/.2.5"
+                    android:layout_marginEnd="16dp"/>
+
+            <TextView
+                    android:id="@+id/restaurant_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/time"
+                    android:text="15 min"/>
+        </LinearLayout>
+
+        <!-- tipos -->
+        <LinearLayout
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+
+            <!-- Botones de categorías circulares -->
+            <Button
+                    android:id="@+id/type1_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tipo1"
+                    android:background="@drawable/search_bar_background"
+                    android:layout_marginEnd="8dp"/>
+            <Button
+                    android:id="@+id/type2_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tipo2"
+                    android:background="@drawable/search_bar_background"
+                    android:layout_marginEnd="8dp"/>
+            <Button
+                    android:id="@+id/type3_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tipo3"
+                    android:background="@drawable/search_bar_background"
+                    android:layout_marginEnd="8dp"/>
+            <Button
+                    android:id="@+id/type4_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tipo4"
+                    android:background="@drawable/search_bar_background"
+                    android:layout_marginEnd="8dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center">
+
+            <!-- Sección de la primera hamburguesa -->
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="16dp">
+
+                <ImageButton
+                        android:id="@+id/producto1"
+                        android:layout_width="147dp"
+                        android:layout_height="123dp"
+                        android:src="@drawable/carne"
+                        android:scaleType="centerCrop"/>
+
+                <TextView
+                        android:text="Hamburguesa de carne"
+                        android:layout_width="147dp"
+                        android:layout_height="24dp"
+                        android:gravity="center"/>
+
+                <TextView
+                        android:text="S./ 10"
+                        android:layout_width="147dp"
+                        android:layout_height="24dp"
+                        android:gravity="center"/>
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content" android:layout_weight="0.5"/>
+
+            <!-- Sección de la segunda hamburguesa -->
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <ImageButton
+                        android:layout_width="147dp"
+                        android:layout_height="123dp"
+                        android:src="@drawable/pollo"
+                        android:scaleType="centerCrop"/>
+
+                <TextView
+                        android:text="Hamburguesa de pollo"
+                        android:layout_width="147dp"
+                        android:layout_height="24dp"
+                        android:gravity="center"/>
+
+                <TextView
+                        android:text="S./ 12"
+                        android:layout_width="147dp"
+                        android:layout_height="24dp"
+                        android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

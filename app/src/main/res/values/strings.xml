@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+    <string name="open">Abrir menú</string> <!-- Aquí defines la cadena "Abrir" -->
+    <string name="close">Cerrar menú</string> <!-- Aquí defines la cadena "Cerrar" -->
+</resources>
