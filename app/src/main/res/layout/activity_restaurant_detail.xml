@@ -74,8 +74,8 @@
                 android:id="@+id/restaurant_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ñurgen king"
-                android:textSize="18sp"/>
+                android:text="Ñurgen king"
+                android:textSize="28sp"/>
 
         <TextView
                 android:id="@+id/descripcion"
@@ -160,7 +160,7 @@
 
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="238dp"
                 android:orientation="horizontal"
                 android:layout_marginTop="16dp"
                 android:gravity="center">
@@ -182,13 +182,13 @@
                 <TextView
                         android:text="Hamburguesa de carne"
                         android:layout_width="147dp"
-                        android:layout_height="24dp"
+                        android:layout_height="47dp"
                         android:gravity="center"/>
 
                 <TextView
                         android:text="S./ 10"
                         android:layout_width="147dp"
-                        android:layout_height="24dp"
+                        android:layout_height="34dp"
                         android:gravity="center"/>
             </LinearLayout>
 
@@ -211,13 +211,13 @@
                 <TextView
                         android:text="Hamburguesa de pollo"
                         android:layout_width="147dp"
-                        android:layout_height="24dp"
+                        android:layout_height="44dp"
                         android:gravity="center"/>
 
                 <TextView
                         android:text="S./ 12"
                         android:layout_width="147dp"
-                        android:layout_height="24dp"
+                        android:layout_height="32dp"
                         android:gravity="center"/>
             </LinearLayout>
 
